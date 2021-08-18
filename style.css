@@ -1,0 +1,60 @@
+#battlePane {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#hero1 {
+    border: 1px solid black ;
+    margin-top: 50px;
+}
+
+#hero1 img{
+    height: 350px;
+    margin-top: 80px;
+    transform: scaleX(-1);
+}
+
+#demonBoss {
+    border: 1px solid black;
+}
+
+#demonBoss img{
+    height: 450px;
+
+}
+
+
+.fighter {
+    margin: 20px;
+}
+
+#actionsPane {
+    padding: 20px;
+    font: 12pt arial;
+}
+
+.stats {
+    width: 300px;
+    border: 1px solid blue;
+}
+
+.healthLabel {
+    font: 18 arial;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+}
+
+.hpBorder {
+    width: 300px;
+    height: 30px;
+    border: 3px solid black;
+}
+
+.hpBar {
+    width: 300;
+    height: 30px;
+    background-color: green;
+
+}
