@@ -1,12 +1,11 @@
 #battlePane {
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: flex-end;
 }
 #hero1 {
-    border: 1px solid black ;
-    margin-top: 50px;
+
 }
 
 #hero1 img{
@@ -16,7 +15,7 @@
 }
 
 #demonBoss {
-    border: 1px solid black;
+
 }
 
 #demonBoss img{
@@ -26,7 +25,8 @@
 
 
 .fighter {
-    margin: 20px;
+    margin: 10px 100px;
+    margin-top: 30px;
 }
 
 #actionsPane {
@@ -34,12 +34,14 @@
     font: 12pt arial;
 }
 
-.stats {
+.actions {
+    height: 300px;
     width: 300px;
-    border: 1px solid blue;
+    
 }
 
 .healthLabel {
+
     font: 18 arial;
     font-weight: bold;
     display: flex;
@@ -47,13 +49,13 @@
 }
 
 .hpBorder {
-    width: 300px;
+    width: 280px;
     height: 30px;
     border: 3px solid black;
 }
 
 .hpBar {
-    width: 300;
+    width: 280px;
     height: 30px;
     background-color: green;
 

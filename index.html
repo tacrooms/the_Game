@@ -11,11 +11,15 @@
     <div id = container >
         <!-- battle field and health boxes -->
         <div id=battlePane>
-            <div id=heroStats class=stats>
+<!-- health bar and stats box for hero w action buttons-->
+            <div id=heroActions class=actions>
+                <!-- use span because its a "header div" -->
                 <span class=healthLabel>HEALTH</span><br>
                 <div class=hpBorder>
                     <div id=hero1HP class=hpBar></div>
                 </div>
+                <br>
+                <span class=healthLabel>ACTIONS</span><br>
                 </div>
             <div id=hero1 class=fighter> 
                 <img src="images/attackHero.png" alt="">
@@ -24,8 +28,8 @@
             <div id=demonBoss class=fighter>
                 <img src="images/finalBossDemon.png" alt="">
             </div>
-
-            <div id=demonStats class=stats>
+<!-- health bar for demon side -->
+            <div id=demonActions class=actions>
                 <span class=healthLabel>HEALTH</span><br>
                 <div class=hpBorder>
                     <div id=demonBossHP class=hpBar></div>
@@ -35,8 +39,8 @@
 
         </div>
         <div id=actionsPane>
-            <h1>Soul Arena</h1>
-            <p>Battle Pane</p>
+            <h1>PARTY</h1>
+            <p>Up to 2 Heroes can be Active at Once</p>
 
 
 
