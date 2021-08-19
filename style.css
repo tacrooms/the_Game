@@ -48,6 +48,20 @@
     flex-direction: row;
 }
 
+.actions button {
+    background-color: silver;
+    border: 2px solid black;
+    font: 20px times;
+    border-radius: 18px;
+    padding: 8px 15px;
+}
+/* you can use the "class -> element (button this time) then colon new action (hover this time) */
+/* the hover funciton will add this css only when the mouse hovers over the element */
+.actions button:hover {
+
+
+}
+
 .hpBorder {
     width: 280px;
     height: 30px;
