@@ -7,25 +7,41 @@
 
 // you select your 
 
-class hero {
-    constructor(name, attack, speed, health, heroClass, specialAbility){
-        this.name = name;
-        this.attack = attack;
-        this.speed = speed;
-        this.health = health;
-        this.heroClass = heroClass;
-        this.specialAbility = specialAbility;
+// class hero {
+//     constructor(name, attack, speed, health, heroClass, specialAbility){
+//         this.name = name;
+//         this.attack = attack;
+//         this.speed = speed;
+//         this.health = health;
+//         this.heroClass = heroClass;
+//         this.specialAbility = specialAbility;
 
-    }
+//     }
+// }
+
+// class demon {
+//     constructor(name, attack, speed, health, specialAbility){
+//         this.name = name;
+//         this.attack = attack;
+//         this.speed = speed;
+//         this.health = health;
+//         this.specialAbility = specialAbility;
+
+//     }
+// }
+
+// define all my global variables that will be referenced
+
+
+//figure out intro to game
+
+function enterRealm(){
+
 }
 
-class demon {
-    constructor(name, attack, speed, health, specialAbility){
-        this.name = name;
-        this.attack = attack;
-        this.speed = speed;
-        this.health = health;
-        this.specialAbility = specialAbility;
 
-    }
+
+
+function bladeWaltz(){
+
 }

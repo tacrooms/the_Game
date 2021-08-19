@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
+    visibility: hidden;
 }
 #hero1 {
 
@@ -29,14 +30,23 @@
     margin-top: 30px;
 }
 
-#actionsPane {
+#partySelection {
     padding: 20px;
     font: 12pt arial;
+    text-align: center;
+}
+#partySelection button {
+    font: 30pt luminari;
+    background-color: slategray;
+}
+#partySelection button:hover{
+    background-color: maroon;
 }
 
 .actions {
     height: 300px;
     width: 300px;
+    visibility: hidden;
     
 }
 
@@ -58,6 +68,7 @@
 /* you can use the "class -> element (button this time) then colon new action (hover this time) */
 /* the hover funciton will add this css only when the mouse hovers over the element */
 .actions button:hover {
+    background-color: steelblue;
 
 
 }
