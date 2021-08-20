@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id=muteButton>
+        <img width="30px" src="images/unmute.png" alt="" onclick="mute()">
+    </div>
+    <audio id=music src="audio/battle.mp3"></audio>
+
+
     <div id = container >
+        
+
         <!-- battle field and health boxes -->
         <div id=battlePane>
 <!-- class 'actions' contains health bar and attack move buttons-->
@@ -19,10 +27,11 @@
                     <div id=hero1HP class=hpBar></div>
                 </div>
                 <br>
+                <p id=heroAttks>
                 <span class=healthLabel>ACTIONS</span><br>
                 <button onclick=bladeWaltz()>BLADE WALTZ</button><br><br>
                 <button onclick=stormCrescendo()>STORM CRESCENDO</button>
-                
+                </p>
                 </div>
             <div id=hero1 class=fighter> 
                 <img src="images/attackSpeedHero.png" alt="">

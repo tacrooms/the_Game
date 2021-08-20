@@ -29,7 +29,9 @@
     margin: 10px 60px;
     margin-top: 30px;
 }
+#muteButton{
 
+}
 #partySelection {
     padding: 20px;
     font: 12pt arial;
@@ -85,3 +87,4 @@
     background-color: green;
 
 }
+
