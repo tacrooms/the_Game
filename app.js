@@ -34,8 +34,23 @@
 
 
 //figure out intro to game
+const battlePane = document.getElementById('battlePane');
+const partySelection = document.getElementById('partySelection');
+const actions = document.getElementsByClassName('actions');
+const heroActions = document.getElementById('heroActions');
+const hero1HP = document.getElementById('hero1HP');
+const demonBossHP = document.getElementById('demonBoss')
 
 function enterRealm(){
+    partySelection.innerHTML = "IT IS TIME TO DEFEND HUMANITIES SOULS, THE WRETCHED SOUL STEALER HAS RISEN AGAIN!";
+    for (let i = 0; i<actions.length; i++){
+        actions[i].style.visibility = "visible";
+    }
+     
+
+    // actions[0].style.visibility = 'visible';
+    // actions[1].style.visibility = 'visible';
+
 
 }
 
@@ -43,5 +58,10 @@ function enterRealm(){
 
 
 function bladeWaltz(){
+    (Math.floor(Math.random()*6)+3)
+    let hitChance = Math.round(Math.random()*10);
+    if (hitChance <=7){
+        let dmg = Math.round(math.random()*10)
+    }
 
 }
