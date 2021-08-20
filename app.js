@@ -107,7 +107,7 @@ function bladeWaltz(){
            if (heroHP>1000){
                heroHP = 1000;
           }
-         partySelection.innerHTML = "<font size= 18px>Storm Crescendo Has healed you for "+ heal + " Health!"
+         partySelection.innerHTML = "<font size= 18px>Storm Crescendo Has healed you for "+ heal + " Health! You now have "+heroHP +" health!"
          // the health bar was the hardest.  this math is confusing but basically herohp starts at 2000 and i divide by 2000. 
          //as demonhp goes down i can multiply it by 280 (the hp bar width) for an accurate percentage (say first attack is 300 it would be 1700/2000)
          let heroHPWidth = (heroHP/1000)*280;
@@ -121,6 +121,7 @@ function bladeWaltz(){
          partySelection.innerHTML += "<br><br><font size= 22px> Soul Stealer has been Defeated!!!"
          heroAttks.style.visibility = "hidden"
      } else {
+        // setTimeout(demonAttk, 3000);
          demonAttk()
      }
  }
@@ -197,6 +198,7 @@ function demonAttk(){
 
     
 }
+
 
 function restartGame(){
     heroHP = 1000;
