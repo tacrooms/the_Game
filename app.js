@@ -56,7 +56,7 @@ function enterRealm(){
     }
     battleMusic.play();
     //remember to chang music back to .5
-    battleMusic.volume = 0; 
+    battleMusic.volume = 0.5; 
     
 
     // actions[0].style.visibility = 'visible';
@@ -97,25 +97,26 @@ function bladeWaltz(){
 
 }
 
- function bladeWaltz(){
+ function stormCrescendo(){
      //(Math.floor(Math.random()*6)+3)
      let hitChance = Math.round(Math.random()*10);
-     if (hitChance <=6){
+     if (hitChance <=3){
          // don't know why the damage does under 200 sometimes was getting confused with this
-         let dmg = Math.round(200+Math.random()*200)+150;
-         demonHP -= dmg;
-         if (demonHP<=0){
-             demonHP = 0;
-         }
-         partySelection.innerHTML = '<font size= 18px>Blade Waltz hit for '+ dmg + ' damage!  The Soul Stealer has '+demonHP+" health left!!"
-         // the health bar was the hardest.  this math is confusing but basically demonhp starts at 2000 and i divide by 2000. 
+         let heal = Math.round(Math.random()*200)+300;
+         heroHP += heal
+           if (heroHP>1000){
+               heroHP = 1000;
+          }
+         partySelection.innerHTML = "<font size= 18px>Storm Crescendo Has healed you for "+ heal + " Health!"
+         // the health bar was the hardest.  this math is confusing but basically herohp starts at 2000 and i divide by 2000. 
          //as demonhp goes down i can multiply it by 280 (the hp bar width) for an accurate percentage (say first attack is 300 it would be 1700/2000)
-         let demonHPWidth = (demonHP/2000)*280;
-         demonBossHP.style.width = demonHPWidth + 'px';
+         let heroHPWidth = (heroHP/1000)*280;
+            hero1HP.style.width = heroHPWidth + 'px';
          }
          else {
-             partySelection.innerHTML = "<font size= 18px>Blade Waltz Missed!";
+             partySelection.innerHTML = "<font size= 18px>The Soul Stealer canceled your Storm Crescendo!";
      }
+    //  this funcion hides the controls after either you kill the demon or you die yourself, my way of ending the game
      if (demonHP == 0){
          partySelection.innerHTML += "<br><br><font size= 22px> Soul Stealer has been Defeated!!!"
          heroAttks.style.visibility = "hidden"
