@@ -39,7 +39,7 @@
 }
 #partySelection button {
     font: 30pt luminari;
-    background-color: slategray;
+    background-color: rosybrown;
 }
 #partySelection button:hover{
     background-color: maroon;
